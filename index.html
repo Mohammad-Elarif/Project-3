@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Egypt Tourism!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="Logo" class="d-inline-block align-text-top" style="height: 30px;"> 
+                    EGYPT
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a> 
+                        </li>
+                        <!-- Dropdown Menu for Trips -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Trips
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cairo</a></li>
+                                <li><a class="dropdown-item" href="#">Alex</a></li>
+                                <li><a class="dropdown-item" href="#">Luxor</a></li>
+                                <li><a class="dropdown-item" href="#">Aswan</a></li>
+                                <li><a class="dropdown-item" href="#">Sharm El Sheikh</a></li>
+                                <li><a class="dropdown-item" href="#">El Galala</a></li>
+                                <li><a class="dropdown-item" href="#">More</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a> 
+                        </li>
+                    </ul>
+                    <form class="d-flex mb-2 mb-lg-0">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+                    <button type="button" class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button> 
+                </div>
+            </div>
+        </nav>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main Content -->
+    <main>
+        <div class="fixed-icons d-flex flex-column align-items-center">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <!-- Modal Section for Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5> 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- Login form -->
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">
+                                    <i class="bi bi-check-circle-fill"></i> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button> 
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <img src="images/PH1.jpg" class="d-block w-100" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/PH2.jpg" class="d-block w-100" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/PH3.jpg" class="d-block w-100" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/PH4.jpg" class="d-block w-100" alt="Fourth slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Welcome Section -->
+    <section id="welcome" class="py-5 bg-light text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-primary text-uppercase mb-4">WELCOME</h1>
+                    <p class="text-secondary fs-5 mb-4">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, Alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs. Book hotels. 24/7 Customer Service.</p>
+                    <button class="btn btn-primary">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Popular Destinations Section -->
+    <section id="popular-destinations" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-primary text-uppercase mb-5">Popular destinations in Egypt</h2>
+            <div class="accordion" id="destinationsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Giza City
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#destinationsAccordion">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, urna nec tincidunt facilisis, metus nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Luxor City
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#destinationsAccordion">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, urna nec tincidunt facilisis, metus nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Sinai Peninsula
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#destinationsAccordion">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Translate Section -->
+    <section id="translate" class="py-5 bg-light">
+        <div class="container">
+            <div class="translate-tab mb-4 p-4 bg-white rounded shadow">
+                <h3 class="text-primary mb-3 bg-light p-2 rounded">Translate From Arabic To English</h3>
+                <p>Write and Translate <span>Press Here</span></p>
+                <button class="btn btn-primary mb-2" id="copyButton" data-bs-toggle="tooltip" title="Copy to clipboard">Copy</button>
+                <textarea class="form-control" id="translateInput" placeholder="Type text here..."></textarea>
+            </div>
+
+            <div class="translate-tab mb-4 p-4 bg-white rounded shadow">
+                <h3 class="text-primary mb-3 bg-light p-2 rounded">Translate From Arabic To English</h3>
+                <p>Write and Translate <span>Press Here</span></p>
+                <button class="btn btn-primary mb-2" id="copyButton2" data-bs-toggle="tooltip" title="Copy to clipboard">Copy</button>
+                <textarea class="form-control" id="translateInput2" placeholder="Type text here..."></textarea>
+            </div>
+
+            <div class="translate-tab mb-4 p-4 bg-white rounded shadow">
+                <h3 class="text-primary mb-3 bg-light p-2 rounded">Translate From Arabic To English</h3>
+                <p>Write and Translate <span>Press Here</span></p>
+                <button class="btn btn-primary mb-2" id="copyButton3" data-bs-toggle="tooltip" title="Copy to clipboard">Copy</button>
+                <textarea class="form-control" id="translateInput3" placeholder="Type text here..."></textarea>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <section id="fixed-bg"></section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Popular Destinations#2 Section -->
+    <section id="popular-destinations">
+        <div class="container">
+            <h2 class="text-center">Popular Destinations in Egypt</h2>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-container">
+                            <img src="images/PH-card.png" class="card-img-top" alt="Cairo">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-title-group">
+                                    <h5 class="card-title">Cairo</h5>
+                                    <a href="#" class="btn btn-primary">Know More</a>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <section id="fixed-bg-2"></section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Appreciation Section -->
+    <section id="appreciation-section" class="appreciation-container container">
+        
+        <div class="appreciation-header text-center mb-4">
+            <h3>Thanks for</h3>
+        </div>
+        <div class="appreciation-row">
+            
+            <div class="appreciation-card">
+                <div class="appreciation-card-body">
+                    <h5 class="appreciation-card-title">All thanks and appreciation</h5>
+                    <p class="appreciation-card-date">October 15, 2020</p>
+                    <div class="appreciation-bottom">
+                        <img src="images/PH-card.png" alt="Profile Image" class="profile-img">
+                        <p class="appreciation-card-text">
+                            Eng. Mohammed Ismail "som3a :)"
+                            <br>Director of UI/UX
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="appreciation-card">
+                <div class="appreciation-card-body">
+                    <h5 class="appreciation-card-title">All thanks and appreciation</h5>
+                    <p class="appreciation-card-date">October 15, 2020</p>
+                    <div class="appreciation-bottom">
+                        <img src="images/PH-card.png" alt="Profile Image" class="profile-img">
+                        <p class="appreciation-card-text">
+                            Eng. Islam Mohammed
+                            <br>Director of UI/UX
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="appreciation-card">
+                <div class="appreciation-card-body">
+                    <h5 class="appreciation-card-title">All thanks and appreciation</h5>
+                    <p class="appreciation-card-date">October 15, 2020</p>
+                    <div class="appreciation-bottom">
+                        <img src="images/PH-card.png" alt="Profile Image" class="profile-img">
+                        <p class="appreciation-card-text">
+                            Eng. Sally Maraush
+                            <br>Director of UI/UX
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <hr class="section-divider">
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Podcast Section -->
+    <section id="podcast-news-section">
+        <div class="podcast-news-header">
+            <h2>Latest Episodes</h2>
+        </div>
+        <div class="podcast-news-container">
+            
+            <div class="podcast-news-card">
+                <div class="podcast-text-content">
+                    <h2>Podcast Title</h2>
+                    <p class="podcast-date"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis cupiditate deleniti aliquam, at laborum quis fugiat obcaecati, fuga quisquam tenetur veniam cum optio sapiente molestias mollitia quibusdam quia consectetur.
+                    At magnam veritatis repellendus ut fuga libero obcaecati molestias vitae ullam, alias quidem pariatur quasi unde nesciunt temporibus nostrum ipsam dolorum incidunt. Dignissimos fugiat aut dolorum harum consectetur voluptate. Modi?
+                    Optio repudiandae ducimus ad soluta quam fuga totam placeat? Magnam qui quos</p>
+                    <div class="podcast-buttons">
+                        <button class="podcast-podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="podcast-time-btn"><i class="fas fa-clock"></i> 55 mins.</button>
+                        <button class="podcast-play-btn"><i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+                </div>
+                <div class="podcast-image-content image-right">
+                    <img src="images/BG3.jpg" alt="Podcast Image">
+                </div>
+            </div>
+            
+            <div class="podcast-news-card second-card">
+                <div class="podcast-image-content image-left">
+                    <img src="images/BG3.jpg" alt="Podcast Image">
+                </div>
+                <div class="podcast-text-content">
+                    <h2>Podcast Title</h2>
+                    <p class="podcast-date"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis cupiditate deleniti aliquam, at laborum quis fugiat obcaecati, fuga quisquam tenetur veniam cum optio sapiente molestias mollitia quibusdam quia consectetur.
+                        At magnam veritatis repellendus ut fuga libero obcaecati molestias vitae ullam, alias quidem pariatur quasi unde nesciunt temporibus nostrum ipsam dolorum incidunt. Dignissimos fugiat aut dolorum harum consectetur voluptate. Modi?
+                        Optio repudiandae ducimus ad soluta quam fuga totam placeat? Magnam qui quos</p>
+                    <div class="podcast-buttons">
+                        <button class="podcast-podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="podcast-time-btn"><i class="fas fa-clock"></i> 55 mins.</button>
+                        <button class="podcast-play-btn"><i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="podcast-news-card">
+                <div class="podcast-text-content">
+                    <h2>Podcast Title</h2>
+                    <p class="podcast-date"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis cupiditate deleniti aliquam, at laborum quis fugiat obcaecati, fuga quisquam tenetur veniam cum optio sapiente molestias mollitia quibusdam quia consectetur.
+                        At magnam veritatis repellendus ut fuga libero obcaecati molestias vitae ullam, alias quidem pariatur quasi unde nesciunt temporibus nostrum ipsam dolorum incidunt. Dignissimos fugiat aut dolorum harum consectetur voluptate. Modi?
+                        Optio repudiandae ducimus ad soluta quam fuga totam placeat? Magnam qui quos</p>
+                    <div class="podcast-buttons">
+                        <button class="podcast-podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="podcast-time-btn"><i class="fas fa-clock"></i> 55 mins.</button>
+                        <button class="podcast-play-btn"><i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+                </div>
+                <div class="podcast-image-content image-right">
+                    <img src="images/BG3.jpg" alt="Podcast Image">
+                </div>
+            </div>
+            
+            <div class="podcast-news-card second-card">
+                <div class="podcast-image-content image-left">
+                    <img src="images/BG3.jpg" alt="Podcast Image">
+                </div>
+                <div class="podcast-text-content">
+                    <h2>Podcast Title</h2>
+                    <p class="podcast-date"><i class="fas fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis cupiditate deleniti aliquam, at laborum quis fugiat obcaecati, fuga quisquam tenetur veniam cum optio sapiente molestias mollitia quibusdam quia consectetur.
+                        At magnam veritatis repellendus ut fuga libero obcaecati molestias vitae ullam, alias quidem pariatur quasi unde nesciunt temporibus nostrum ipsam dolorum incidunt. Dignissimos fugiat aut dolorum harum consectetur voluptate. Modi?
+                        Optio repudiandae ducimus ad soluta quam fuga totam placeat? Magnam qui quos</p>
+                    <div class="podcast-buttons">
+                        <button class="podcast-podcast-btn"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="podcast-time-btn"><i class="fas fa-clock"></i> 55 mins.</button>
+                        <button class="podcast-play-btn"><i class="fas fa-play"></i> Play Episode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Join Us Section -->
+    <section id="join-us-section">
+        <div class="join-us-header">
+            <h2>JOIN US</h2>
+        </div>
+        <div class="join-us-container">
+            
+            <div class="join-us-card">
+                <div class="text-content">
+                    <h3>Subscribe Now</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/color.png" alt="Twitter Icon">
+                </div>
+                <div class="link-container">
+                    <a href="" target="_blank">Go to Twitter</a>
+                </div>
+            </div>
+            
+            <div class="join-us-card">
+                <div class="text-content">
+                    <h3>Follow</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/color.png" alt="WhatsApp Icon">
+                </div>
+                <div class="link-container">
+                    <a href="" target="_blank">Go to WhatsApp</a>
+                </div>
+            </div>
+            
+            <div class="join-us-card">
+                <div class="text-content">
+                    <h3>Like the page</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/color.png" alt="LinkedIn Icon">
+                </div>
+                <div class="link-container">
+                    <a href="" target="_blank">Go to LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="join-us-card">
+                <div class="text-content">
+                    <h3>Watch videos</h3>
+                </div>
+                <div class="icon-container">
+                    <img src="images/color.png" alt="Instagram Icon">
+                </div>
+                <div class="link-container">
+                    <a href="" target="_blank">Go to Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Important Links Section -->
+    <section id="important-links-section">
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                <div class="icon-card">
+                    <div class="white-line"></div>
+                    <div class="icon-text-wrapper">
+                        <img src="images/logo2.png" alt="Good Company Icon" class="circle-icon">
+                        <p>Good Company</p>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+                <div class="contact-info">
+                    <p>Tel: 000-000-000</p>
+                    <p>Address: EGYPT</p>
+                    <p>Fax: 000-000-000</p>
+                </div>
+            </div>
+
+            
+            <div class="grid-item">
+                <div class="icon-card">
+                    <div class="white-line"></div>
+                    <div class="icon-text-wrapper">
+                        <img src="images/logo2.png" alt="Important Links Icon" class="circle-icon">
+                        <p>Important Links</p>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+                <div class="links">
+                    <a href="">Visit Us</a>
+                    <a href="">Take a Look</a>
+                    <a href="">Your health is more important</a>
+                </div>
+            </div>
+
+            
+            <div class="grid-item">
+                <div class="icon-card">
+                    <div class="white-line"></div>
+                    <div class="icon-text-wrapper">
+                        <img src="images/logo2.png" alt="Vision Icon" class="circle-icon">
+                        <p>Vision</p>
+                    </div>
+                    <div class="white-line"></div>
+                </div>
+                <div class="additional-info">
+                    <p>Services for all</p>
+                    <p>Provide best services</p>
+                    <p>You will be better than before</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <!-- Footer Section -->
+    <section id="footer-section">
+        <div class="footer-line"></div>
+        <div class="footer-container">
+            <p>COPYRIGHT © 2020 SHIMAAHUSSIEN EL SAID. GOOD COMPANY. ALL RIGHTS.</p>
+        </div>
+        <div class="footer-line"></div>
+    </section>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<script src="js/script.js"></script>
+    </body>
+</html>
